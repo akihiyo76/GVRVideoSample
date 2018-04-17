@@ -13,9 +13,14 @@
 		86974D122086237B0019D33D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86974D112086237B0019D33D /* Assets.xcassets */; };
 		86974D152086237B0019D33D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86974D132086237B0019D33D /* LaunchScreen.storyboard */; };
 		86974D182086237B0019D33D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86974D172086237B0019D33D /* main.m */; };
+		86974D1F208623F50019D33D /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 86974D1E208623F50019D33D /* sample.mp4 */; };
+		D21D058E08F67F01987B405D /* libPods-GVRVideoSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76FE319059D7943F01EC1041 /* libPods-GVRVideoSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BF6315D5BB23EFB4B0D74DA /* Pods-GVRVideoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GVRVideoSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GVRVideoSample/Pods-GVRVideoSample.release.xcconfig"; sourceTree = "<group>"; };
+		48481EE006E6D446AEF88533 /* Pods-GVRVideoSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GVRVideoSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GVRVideoSample/Pods-GVRVideoSample.debug.xcconfig"; sourceTree = "<group>"; };
+		76FE319059D7943F01EC1041 /* libPods-GVRVideoSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GVRVideoSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86974D05208623790019D33D /* GVRVideoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GVRVideoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86974D08208623790019D33D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		86974D09208623790019D33D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		86974D142086237B0019D33D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86974D162086237B0019D33D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86974D172086237B0019D33D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86974D1E208623F50019D33D /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21D058E08F67F01987B405D /* libPods-GVRVideoSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +49,11 @@
 		86974CFC208623790019D33D = {
 			isa = PBXGroup;
 			children = (
+				86974D1E208623F50019D33D /* sample.mp4 */,
 				86974D07208623790019D33D /* GVRVideoSample */,
 				86974D06208623790019D33D /* Products */,
+				FB6527923CD99470D9E4F597 /* Pods */,
+				A4D08B690B634643754946C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +81,23 @@
 			path = GVRVideoSample;
 			sourceTree = "<group>";
 		};
+		A4D08B690B634643754946C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76FE319059D7943F01EC1041 /* libPods-GVRVideoSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB6527923CD99470D9E4F597 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48481EE006E6D446AEF88533 /* Pods-GVRVideoSample.debug.xcconfig */,
+				0BF6315D5BB23EFB4B0D74DA /* Pods-GVRVideoSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86974D1B2086237B0019D33D /* Build configuration list for PBXNativeTarget "GVRVideoSample" */;
 			buildPhases = (
+				9C292AA724395DB5C775F7E8 /* [CP] Check Pods Manifest.lock */,
 				86974D01208623790019D33D /* Sources */,
 				86974D02208623790019D33D /* Frameworks */,
 				86974D03208623790019D33D /* Resources */,
+				8CEBAFA9B841E609EF3C1FA1 /* [CP] Embed Pods Frameworks */,
+				6A59706468BFDBEBACF08E9C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86974D1F208623F50019D33D /* sample.mp4 in Resources */,
 				86974D152086237B0019D33D /* LaunchScreen.storyboard in Resources */,
 				86974D122086237B0019D33D /* Assets.xcassets in Resources */,
 				86974D10208623790019D33D /* Main.storyboard in Resources */,
@@ -135,6 +166,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A59706468BFDBEBACF08E9C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GVRVideoSample/Pods-GVRVideoSample-resources.sh",
+				"${PODS_ROOT}/GVRSDK/Resources/CardboardSDK.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitCore.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitDialogs.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitHUD.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/MaterialRobotoFontLoader.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CardboardSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitCore.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitDialogs.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialRobotoFontLoader.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GVRVideoSample/Pods-GVRVideoSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CEBAFA9B841E609EF3C1FA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GVRVideoSample/Pods-GVRVideoSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C292AA724395DB5C775F7E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GVRVideoSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		86974D01208623790019D33D /* Sources */ = {
@@ -220,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -272,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -281,9 +374,11 @@
 		};
 		86974D1C2086237B0019D33D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48481EE006E6D446AEF88533 /* Pods-GVRVideoSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EA3G5HW8ZV;
 				INFOPLIST_FILE = GVRVideoSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,15 +386,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ro.GVRVideoSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		86974D1D2086237B0019D33D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BF6315D5BB23EFB4B0D74DA /* Pods-GVRVideoSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EA3G5HW8ZV;
 				INFOPLIST_FILE = GVRVideoSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,7 +404,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ro.GVRVideoSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
